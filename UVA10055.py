@@ -4,7 +4,7 @@ while(True):
         s = num[0]
         o = num[1]
         total = 0
-        total = o - s
-        print(total)
+        total =abs(o - s)
+        print(total, end = "\n")
     except EOFError:
         break
