@@ -2,7 +2,7 @@ n = int(input())
 count = {}
 for i in range(n):
     l = input().split()
-    country = l[0].capitalize()
+    country = l[0]
     if country not in count:
         count[country] = 1
     else:
