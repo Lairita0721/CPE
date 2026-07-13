@@ -9,12 +9,11 @@ while(True):
                     if c.isalpha():
                         if c == ch:
                             sub.append(c)
-                            a.remove(ch)
+                            ##a.remove(ch)
                             b.remove(ch)
                             break
         sub.sort()
-        for s in sub:
-            print(s, end = "")
-        print(end = "\n")
+        print("".join(sub))
+        ##print(end = "\n")
     except EOFError:
         break
