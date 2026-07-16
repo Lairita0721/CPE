@@ -5,14 +5,16 @@ while True:
         text.append(input())
     except EOFError:
         break
-if len(text) == 0:
-    exit()
+
 max_len = max(len(s) for s in text)
+
 for col in range(max_len):
     result = ""
+
     for row in range(len(text)-1, -1, -1):
         if col < len(text[row]):
             result += text[row][col]
         else:
             result += " "
-    print(result.rstrip()) 
+
+    print(result)
