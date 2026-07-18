@@ -13,10 +13,8 @@ while(True):
             a = abs(seq[i] - seq[i + 1])
             if a not in l:
                 jolly = False
-                print("f")
                 break
             else:
-                print(a)
                 l.remove(a)
         if jolly == True:
             print("Jolly", end = "\n")
