@@ -16,7 +16,7 @@ while(True):
             if square[i] > b:
                 end = i - 1
                 break
-        count = end - start
-        print(square[start], square[end], count, end = "\n")
+        count = end - start + 1
+        print(count, end = "\n")
     except EOFError:
         break
