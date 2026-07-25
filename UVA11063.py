@@ -34,5 +34,6 @@ while(True):
             print(f"Case #{c}: It is not a B2-Sequence.", end = "\n")
             ##print(sum)
         c += 1
+        print()
     except EOFError:
         break
