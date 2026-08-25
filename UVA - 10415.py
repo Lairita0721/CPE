@@ -20,6 +20,8 @@ for _ in range(t):
     c = [0] * 10
     last = []
     for note in song:
+        if note == " ":
+            continue
         now = finger[note]
         for f in now:
             if f not in last:
