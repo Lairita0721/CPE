@@ -10,5 +10,5 @@ for i in range(n):
                 frequency[ch] = 1
             else:
                 frequency[ch] += 1
-for c in sorted(frequency, key = lambda x:(frequency[x], x)):
+for c in sorted(frequency, key = lambda x:(-frequency[x], x)):
     print(c, frequency[c])
