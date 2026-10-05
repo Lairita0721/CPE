@@ -27,6 +27,5 @@ for _ in range(t):
                 value[p] = 255
         else:
             pass
-    print(f"Case {_ + 1}:" + " ".join(f"{v:02X}" for v in value))
-    
+    print(f"Case {_ + 1}:" + " ".join(f"{v:02X}" for v in value))    
     print()
